@@ -1,0 +1,7 @@
+F:\Code\Geek Brains\C#_2\Class Work\StructsAndClasses\StructsAndClasses\bin\Debug\StructsAndClasses.exe.config
+F:\Code\Geek Brains\C#_2\Class Work\StructsAndClasses\StructsAndClasses\bin\Debug\StructsAndClasses.exe
+F:\Code\Geek Brains\C#_2\Class Work\StructsAndClasses\StructsAndClasses\bin\Debug\StructsAndClasses.pdb
+F:\Code\Geek Brains\C#_2\Class Work\StructsAndClasses\StructsAndClasses\obj\Debug\StructsAndClasses.csprojAssemblyReference.cache
+F:\Code\Geek Brains\C#_2\Class Work\StructsAndClasses\StructsAndClasses\obj\Debug\StructsAndClasses.csproj.CoreCompileInputs.cache
+F:\Code\Geek Brains\C#_2\Class Work\StructsAndClasses\StructsAndClasses\obj\Debug\StructsAndClasses.exe
+F:\Code\Geek Brains\C#_2\Class Work\StructsAndClasses\StructsAndClasses\obj\Debug\StructsAndClasses.pdb
