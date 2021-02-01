@@ -35,7 +35,6 @@ namespace Asteroids
             this.btnRecords = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnSplashScreen = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,7 +52,7 @@ namespace Asteroids
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(339, 97);
+            this.btnStart.Location = new System.Drawing.Point(339, 163);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(225, 57);
             this.btnStart.TabIndex = 1;
@@ -63,7 +62,7 @@ namespace Asteroids
             // 
             // btnRecords
             // 
-            this.btnRecords.Location = new System.Drawing.Point(339, 286);
+            this.btnRecords.Location = new System.Drawing.Point(339, 240);
             this.btnRecords.Name = "btnRecords";
             this.btnRecords.Size = new System.Drawing.Size(225, 57);
             this.btnRecords.TabIndex = 2;
@@ -91,23 +90,11 @@ namespace Asteroids
             this.label1.TabIndex = 4;
             this.label1.Text = "Daniel Lyashchenko © 2021";
             // 
-            // btnSplashScreen
-            // 
-            this.btnSplashScreen.Location = new System.Drawing.Point(340, 193);
-            this.btnSplashScreen.Name = "btnSplashScreen";
-            this.btnSplashScreen.Size = new System.Drawing.Size(224, 57);
-            this.btnSplashScreen.TabIndex = 5;
-            this.btnSplashScreen.Text = "SplashScreen";
-            this.btnSplashScreen.UseMnemonic = false;
-            this.btnSplashScreen.UseVisualStyleBackColor = true;
-            this.btnSplashScreen.Click += new System.EventHandler(this.btnSplashScreen_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(937, 564);
-            this.Controls.Add(this.btnSplashScreen);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnRecords);
@@ -128,7 +115,6 @@ namespace Asteroids
         private System.Windows.Forms.Button btnRecords;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnSplashScreen;
     }
 }
 

@@ -17,7 +17,8 @@ namespace Asteroids
         static public int Width { get; private set; }
         static public int Height { get; private set; }
         static public Image background = Image.FromFile("Images\\Starry-Dark-Space.jpg");
-        static public BaseObject[] objs;
+        static public List<BaseObject> objs;
+        static public Bullet bullet = new Bullet(new Point(0, 400), new Point(5, 0), new Size(5, 15));
         static Timer timer = new Timer();
 
         static Game()
@@ -27,26 +28,18 @@ namespace Asteroids
 
         static void Load()
         {
-            objs = new BaseObject[30];
-            ////Base object
-            //for (int i = 0; i < 10; i++)
-            //    objs[i] = new BaseObject(new Point(i * 15, i * 15),
-            //        new Point(i, i), new Size(10, 10));
-
-            //Galaxy
-            for (int i = 0; i < 10; i++)
-                objs[i] = new Galaxy(new Point(Random.Next(0, Game.Width), Random.Next(0, Game.Height)),
-                    new Point(i, i), new Size(50, 50));
-
-            //Star
-            for (int i = 10; i < 20; i++)
-                objs[i] = new Star(new Point(Random.Next(0, Game.Width), Random.Next(0, Game.Height)),
-                    new Point(i, i), new Size(38, 38));
-
-            //Planet
-            for (int i = 20; i < objs.Length; i++)
-                objs[i] = new Planet(new Point(Random.Next(0, Game.Width), Random.Next(0, Game.Height)),
-                    new Point(i, i), new Size(28, 28));
+            objs = new List<BaseObject>();
+            //Floating Planet
+            objs.Add(new Planet(new Point(Random.Next(0, Game.Width), Random.Next(0, Game.Height)),
+                    new Point(1, 0), new Size(100, 100)));
+            //Floating Stars
+            for (int i = 0; i < 40; i++)
+                objs.Add(new Star(new Point(Random.Next(0, Game.Width), Random.Next(0, Game.Height)),
+                    new Point(2, 0), new Size(10, 10)));
+            //Floating Asteroids
+            for (int i = 0; i < 20; i++)
+                objs.Add(new Asteroid(new Point(Random.Next(0, Game.Width), Random.Next(0, Game.Height)),
+                    new Point(-8, 0), new Size(25, 25)));
         }
 
         static public void Init(Form form)
@@ -55,6 +48,9 @@ namespace Asteroids
             context = BufferedGraphicsManager.Current;
             g = form.CreateGraphics();
 
+            if (form.ClientSize.Width > 1000 || form.ClientSize.Width < 0 ||
+                form.ClientSize.Height > 1000 || form.ClientSize.Height < 0)
+                throw new ArgumentOutOfRangeException();
             Width = form.ClientSize.Width;
             Height = form.ClientSize.Height;
 
@@ -85,14 +81,23 @@ namespace Asteroids
             //Buffer.Graphics.DrawRectangle(Pens.White, 10, 10, 100, 200);
             foreach (var obj in objs)
                 obj.Draw();
-
+            bullet.Draw();
             Buffer.Render();        
         }
 
         static public void Update()
         {
             foreach (var obj in objs)
+            {
                 obj.Update();
+                if (obj.GetType() == new Asteroid().GetType())
+                    if (obj.Collision(bullet))
+                    {
+                        obj.Pos = new Point(Game.Width, Random.Next(0, Game.Height));
+                        bullet.Pos = new Point(0, Random.Next(0, Game.Height));
+                    }
+            }
+            bullet.Update();
         }
     }
 }

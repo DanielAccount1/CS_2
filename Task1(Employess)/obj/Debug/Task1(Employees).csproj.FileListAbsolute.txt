@@ -1,0 +1,13 @@
+F:\Code\Geek Brains\C#_2\Class Work\CS_2\Task1(Employess)\bin\Debug\Task1(Employess).exe.config
+F:\Code\Geek Brains\C#_2\Class Work\CS_2\Task1(Employess)\bin\Debug\Task1(Employess).exe
+F:\Code\Geek Brains\C#_2\Class Work\CS_2\Task1(Employess)\bin\Debug\Task1(Employess).pdb
+F:\Code\Geek Brains\C#_2\Class Work\CS_2\Task1(Employess)\obj\Debug\Task1(Employees).csproj.CoreCompileInputs.cache
+F:\Code\Geek Brains\C#_2\Class Work\CS_2\Task1(Employess)\obj\Debug\Task1(Employess).exe
+F:\Code\Geek Brains\C#_2\Class Work\CS_2\Task1(Employess)\obj\Debug\Task1(Employess).pdb
+F:\Code\Geek Brains\C#_2\My Code\CS_2\Task1(Employess)\bin\Debug\Task1(Employess).exe.config
+F:\Code\Geek Brains\C#_2\My Code\CS_2\Task1(Employess)\bin\Debug\Task1(Employess).exe
+F:\Code\Geek Brains\C#_2\My Code\CS_2\Task1(Employess)\bin\Debug\Task1(Employess).pdb
+F:\Code\Geek Brains\C#_2\My Code\CS_2\Task1(Employess)\obj\Debug\Task1(Employees).csprojAssemblyReference.cache
+F:\Code\Geek Brains\C#_2\My Code\CS_2\Task1(Employess)\obj\Debug\Task1(Employees).csproj.CoreCompileInputs.cache
+F:\Code\Geek Brains\C#_2\My Code\CS_2\Task1(Employess)\obj\Debug\Task1(Employess).exe
+F:\Code\Geek Brains\C#_2\My Code\CS_2\Task1(Employess)\obj\Debug\Task1(Employess).pdb

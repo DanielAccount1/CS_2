@@ -38,17 +38,5 @@ namespace Asteroids
         {
             this.Show();
         }
-
-        private void btnSplashScreen_Click(object sender, EventArgs e)
-        {
-            Form form = new Form();
-            form.Width = Image.FromFile("Images\\Starry-Dark-Space.jpg").Width;
-            form.Height = Image.FromFile("Images\\Starry-Dark-Space.jpg").Height;
-            form.FormClosed += Form_FormClosed;
-            SplashScreen.Init(form);
-            form.Show();
-            this.Hide();
-            SplashScreen.Draw();
-        }
     }
 }
